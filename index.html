@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cafe NOC.（カフェ ノック）｜大阪・新町の夜カフェ 19時〜24時</title>
+<meta name="description" content="大阪市西区新町、四ツ橋駅から徒歩5分。19時から24時まで開いている夜カフェ「cafe NOC.」。白とコンクリートの静かな空間で、自家製プリンとコーヒー、お酒を。Google口コミ169件・★4.9。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#1d3a6e; --red-dark:#12264d; --gold:#c9a35c; --cream:#f6f2ec; --ink:#232733; --gray:#6d6a63;
+  --card:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans JP",sans-serif;color:var(--ink);background:var(--cream);line-height:1.8;font-size:16px;padding-bottom:74px}
+img{max-width:100%;display:block}
+.sample-band{position:fixed;top:0;left:0;right:0;z-index:60;background:#222;color:#fff;font-size:12px;text-align:center;padding:6px 10px;letter-spacing:.04em}
+.watermark{position:fixed;inset:0;z-index:55;pointer-events:none;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.watermark span{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:22vw;color:rgba(29,58,110,.05);transform:rotate(-18deg);white-space:nowrap}
+header.site{position:sticky;top:29px;z-index:50;background:rgba(246,242,236,.95);backdrop-filter:blur(6px);border-bottom:3px solid var(--red)}
+.header-in{max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
+.logo{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:21px;color:var(--red-dark);letter-spacing:.02em}
+.logo small{display:block;font-size:11px;color:var(--gray);font-weight:700;letter-spacing:.14em}
+.tel-btn{background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:9px 16px;border-radius:999px}
+.hero{position:relative;background:#10182b;color:#fff}
+.hero img{width:100%;height:62vh;min-height:340px;object-fit:cover;opacity:.94}
+.hero-txt{position:absolute;inset:auto 0 0 0;padding:56px 20px 26px;background:linear-gradient(transparent,rgba(8,14,30,.88) 55%)}
+.hero-in{max-width:960px;margin:0 auto}
+.hero .catch{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:clamp(25px,6.2vw,42px);line-height:1.4;text-shadow:0 2px 10px rgba(0,0,0,.45)}
+.hero .catch .g{color:var(--gold)}
+.hero .sub{margin-top:8px;font-size:15px;opacity:.95}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.5);border-radius:999px;padding:5px 13px;font-size:13px;font-weight:700}
+.badge b{color:var(--gold)}
+.status-line{max-width:960px;margin:0 auto;padding:14px 20px 0}
+.status{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--red);color:var(--red-dark);font-weight:700;font-size:14px;border-radius:10px;padding:8px 14px}
+.status .dot{width:10px;height:10px;border-radius:50%;background:#2e9e4f}
+.status.closed .dot{background:#b0a49c}
+.stats{max-width:960px;margin:0 auto;padding:18px 20px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:#fff;border-radius:12px;padding:14px 8px;text-align:center;box-shadow:0 3px 12px rgba(30,40,80,.07)}
+.stat .num{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:24px;color:var(--red-dark);line-height:1.2}
+.stat .num small{font-size:13px}
+.stat .lbl{font-size:12px;color:var(--gray);font-weight:700;margin-top:2px}
+section{max-width:960px;margin:0 auto;padding:44px 20px 6px}
+h2{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:24px;color:var(--red-dark);margin-bottom:6px}
+h2 .en{display:block;font-size:11px;letter-spacing:.22em;color:var(--gold);font-weight:900}
+.lead{color:var(--gray);font-size:15px;margin-bottom:20px}
+.reasons{display:grid;gap:14px}
+@media(min-width:700px){.reasons{grid-template-columns:repeat(3,1fr)}}
+.reason{background:var(--card);border-radius:14px;padding:20px 18px;box-shadow:0 3px 14px rgba(30,40,80,.08);border-top:5px solid var(--gold)}
+.reason h3{font-size:17px;font-weight:700;margin-bottom:6px;color:var(--ink)}
+.reason p{font-size:14px;color:var(--gray)}
+.owner{background:#fff;border-radius:14px;padding:20px;box-shadow:0 3px 14px rgba(30,40,80,.07);display:flex;gap:16px;align-items:flex-start}
+.owner .mark{flex:none;width:52px;height:52px;border-radius:50%;background:var(--red);color:#fff;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:22px;display:flex;align-items:center;justify-content:center}
+.owner h3{font-size:16px;font-weight:700;margin-bottom:4px}
+.owner p{font-size:14px;color:var(--gray)}
+.menu-grid{display:grid;gap:18px}
+@media(min-width:700px){.menu-grid{grid-template-columns:repeat(3,1fr)}}
+.menu-card{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 4px 16px rgba(30,40,80,.10)}
+.menu-card img{width:100%;height:190px;object-fit:cover}
+.menu-body{padding:16px 18px 18px}
+.menu-name{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:18px}
+.no1{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:700;border-radius:6px;padding:2px 8px;margin-left:6px;vertical-align:middle}
+.price{color:var(--red);font-weight:800;font-size:19px;margin:4px 0 6px}
+.price small{font-size:12px;color:var(--gray);font-weight:500}
+.menu-desc{font-size:14px;color:var(--gray)}
+.note{font-size:12px;color:var(--gray);margin-top:12px}
+.price-table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 3px 14px rgba(30,40,80,.07)}
+.price-table td{padding:11px 16px;font-size:15px;border-bottom:1px solid #ece7dd}
+.price-table tr:last-child td{border-bottom:none}
+.price-table td.p{text-align:right;font-weight:700;color:var(--red-dark);white-space:nowrap}
+.guide{background:#fff;border:2px dashed var(--gold);border-radius:16px;padding:20px}
+.guide ol{margin-left:20px;font-size:15px}
+.guide li{margin-bottom:6px}
+.news{background:#fff;border-radius:14px;padding:6px 20px;box-shadow:0 3px 14px rgba(30,40,80,.07)}
+.news li{list-style:none;padding:13px 0;border-bottom:1px solid #ece7dd;font-size:15px}
+.news li:last-child{border-bottom:none}
+.news .date{font-weight:700;color:var(--red-dark);margin-right:8px;font-size:14px}
+.news .tag{display:inline-block;background:var(--gold);color:#4a3a10;font-size:11px;font-weight:700;border-radius:6px;padding:2px 8px;margin-right:8px}
+.ig-banner{display:flex;align-items:center;gap:16px;background:linear-gradient(120deg,#12264d,#1d3a6e);color:#fff;border-radius:16px;padding:22px;text-decoration:none}
+.ig-banner .t{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:19px}
+.ig-banner .s{font-size:13px;opacity:.92}
+.ig-banner .arrow{margin-left:auto;font-size:26px;font-weight:800}
+.info-table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 3px 14px rgba(30,40,80,.07)}
+.info-table th,.info-table td{padding:13px 16px;font-size:15px;text-align:left;border-bottom:1px solid #ece7dd;vertical-align:top}
+.info-table th{width:32%;background:#eef1f8;color:var(--red-dark);font-weight:700;white-space:nowrap}
+.info-table tr:last-child th,.info-table tr:last-child td{border-bottom:none}
+.map-btn{display:block;text-align:center;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;border-radius:12px;padding:14px;margin-top:16px}
+.gaikan{border-radius:16px;overflow:hidden;margin-top:18px;box-shadow:0 4px 16px rgba(30,40,80,.10)}
+.gaikan img{width:100%;height:230px;object-fit:cover}
+.gaikan figcaption{font-size:12px;color:var(--gray);background:#fff;padding:8px 14px}
+footer{background:#131a2c;color:#dfe3ee;margin-top:52px;padding:34px 20px 30px}
+.foot-in{max-width:960px;margin:0 auto;font-size:13px}
+.foot-in .fname{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:18px;color:#fff;margin-bottom:8px}
+.foot-in a{color:var(--gold)}
+.foot-note{margin-top:16px;font-size:11px;color:#98a0b5;line-height:1.7}
+.action-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr 1fr;background:#fff;border-top:1px solid #e6e0d4;box-shadow:0 -4px 16px rgba(20,30,60,.10)}
+.action-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:9px 4px 10px;text-decoration:none;color:var(--ink);font-size:12px;font-weight:700}
+.action-bar a.main{background:var(--red);color:#fff}
+.action-bar .ic{font-size:19px;line-height:1}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<div class="sample-band">これはサンプルです。無断使用は禁止しています</div>
+<div class="watermark" aria-hidden="true"><span>SAMPLE</span></div>
+
+<header class="site">
+  <div class="header-in">
+    <div class="logo">cafe NOC.<small>大阪・新町の夜カフェ</small></div>
+    <a class="tel-btn" href="tel:0665343701">☎ 電話する</a>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="hero.webp" alt="cafe NOC.の店内イメージ（濃紺タイルのカウンター）">
+  <div class="hero-txt">
+    <div class="hero-in">
+      <p class="catch">夜に味わう、<span class="g">あなたの時間</span>。<br>19時から24時まで開いている、大阪・新町の夜カフェ。</p>
+      <p class="sub">cafe NOC.（カフェ ノック）― 四ツ橋駅から徒歩5分、心斎橋駅から徒歩11分。ビルの3階にある、静かな隠れ家です</p>
+      <div class="badges">
+        <span class="badge">Google口コミ <b>169件・★4.9</b></span>
+        <span class="badge">毎日 <b>19:00〜24:00</b></span>
+        <span class="badge"><b>年中無休</b>（年末年始除く）</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="status-line"><span class="status" id="status"><span class="dot"></span><span id="status-text">営業時間を確認中…</span></span></div>
+
+<div class="stats">
+  <div class="stat"><p class="num">★4.9</p><p class="lbl">Google評価</p></div>
+  <div class="stat"><p class="num">169<small>件</small></p><p class="lbl">Google口コミ</p></div>
+  <div class="stat"><p class="num">19–24<small>時</small></p><p class="lbl">夜だけの営業</p></div>
+  <div class="stat"><p class="num">18<small>席</small></p><p class="lbl">静かな小箱</p></div>
+</div>
+
+<section class="reveal">
+  <h2><span class="en">REASON</span>選ばれる理由</h2>
+  <p class="lead">一日の終わりに、扉をひとつ開けるような場所。その理由は3つあります。</p>
+  <div class="reasons">
+    <div class="reason">
+      <h3>夜だけ開く、静かな空間</h3>
+      <p>営業は19時から24時まで。天井が高く、白とコンクリートの店内に濃紺タイルのカウンターが映えます。口コミでも「静かに過ごせる」という声が多い一軒です。</p>
+    </div>
+    <div class="reason">
+      <h3>組み合わせは、自由自在</h3>
+      <p>メニューの数は多くありません。その代わり、どのスイーツにどのドリンクを合わせるかは自由です。自分だけのお気に入りの組み合わせを見つける楽しみがあります。</p>
+    </div>
+    <div class="reason">
+      <h3>コーヒーも、お酒も</h3>
+      <p>coffee &amp; alcohol。しっかり甘いスイーツには、すっきりしたコーヒーを。ノンアルコールのシャーリーテンプルなどもあり、お酒が飲めない夜にも寄れます。</p>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2><span class="en">MENU</span>おすすめ</h2>
+  <p class="lead">迷ったら、まずこのあたりから。</p>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="pudding.webp" alt="自家製プリンのイメージ" loading="lazy">
+      <div class="menu-body">
+        <p class="menu-name">自家製プリン<span class="no1">看板</span></p>
+        <p class="menu-desc">「硬めなのに、ぷるん」。自家製のシンプルな味で、誰からも愛される一品とお店が紹介する、大人気のスイーツです。</p>
+      </div>
+    </div>
+    <div class="menu-card">
+      <img src="drinks.webp" alt="アイスコーヒーとシャーリーテンプルのイメージ" loading="lazy">
+      <div class="menu-body">
+        <p class="menu-name">ドリンクとの組み合わせ</p>
+        <p class="menu-desc">アイスコーヒーやカフェラテ、グレナデンシロップの甘酸っぱさが爽やかなシャーリーテンプルまで。スイーツとの相性を考える時間も、夜カフェの楽しみです。</p>
+      </div>
+    </div>
+    <div class="menu-card">
+      <img src="mirror.webp" alt="鏡の前の席のイメージ" loading="lazy">
+      <div class="menu-body">
+        <p class="menu-name">鏡の前の席</p>
+        <p class="menu-desc">お客さんがよく立ち止まる、大きな鏡のある席。お帰りの前に一枚撮りたくなる、絵になる空間もこの店の魅力です。</p>
+      </div>
+    </div>
+  </div>
+  <p class="note">※価格は店頭のメニューでご確認ください（ご予算の目安は1,000〜2,000円ほど）。写真はすべてイメージです。</p>
+</section>
+
+<section class="reveal">
+  <h2><span class="en">GUIDE</span>初めての方へ</h2>
+  <p class="lead">ふらっと立ち寄れる夜に。</p>
+  <div class="guide">
+    <ol>
+      <li>予約は必須ではありません。お席に限りがあるので、心配な時はInstagramのDMで気軽に問い合わせできます</li>
+      <li>チャージのおかきが、甘いスイーツによく合います</li>
+      <li>お支払いはPayPayが使えます（クレジットカード・電子マネーは不可）</li>
+      <li>全席禁煙です</li>
+      <li>定休日は基本的にありません（年末年始を除く）。ふらっと来てもらえたら、というお店です</li>
+    </ol>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2><span class="en">NEWS</span>お知らせ</h2>
+  <ul class="news">
+    <li><span class="tag">営業</span>年中無休で営業しています（年末年始を除く）。営業時間は19:00〜24:00です</li>
+    <li><span class="tag">予約</span>お席の問い合わせは、InstagramのDMでも受け付けています</li>
+    <li><span class="tag">メニュー</span>チャージが「おかき」に変わりました。甘いスイーツとの相性が好評です</li>
+  </ul>
+</section>
+
+<section class="reveal">
+  <a class="ig-banner" href="https://www.instagram.com/cafe_noc._/" target="_blank" rel="noopener">
+    <div>
+      <p class="t">Instagramで最新情報をチェック</p>
+      <p class="s">@cafe_noc._ ― 営業のお知らせや日々の様子を投稿しています</p>
+    </div>
+    <span class="arrow">›</span>
+  </a>
+</section>
+
+<section class="reveal" id="access">
+  <h2><span class="en">ACCESS</span>店舗情報</h2>
+  <table class="info-table">
+    <tr><th>店名</th><td>cafe NOC.（カフェ ノック）</td></tr>
+    <tr><th>住所</th><td>〒550-0013 大阪府大阪市西区新町1-18-24 3F</td></tr>
+    <tr><th>アクセス</th><td>大阪メトロ四つ橋線「四ツ橋駅」から徒歩5分<br>「心斎橋駅」から徒歩11分／「西大橋駅」から約260m</td></tr>
+    <tr><th>電話</th><td><a href="tel:0665343701">06-6534-3701</a></td></tr>
+    <tr><th>営業時間</th><td>19:00〜24:00</td></tr>
+    <tr><th>定休日</th><td>年中無休（年末年始を除く）</td></tr>
+    <tr><th>席数</th><td>18席（全席禁煙）</td></tr>
+    <tr><th>お支払い</th><td>PayPay可（クレジットカード・電子マネー不可）</td></tr>
+    <tr><th>Instagram</th><td><a href="https://www.instagram.com/cafe_noc._/" target="_blank" rel="noopener">@cafe_noc._</a></td></tr>
+  </table>
+  <a class="map-btn" href="https://www.google.com/maps/search/?api=1&amp;query=cafe+NOC.+%E5%A4%A7%E9%98%AA+%E6%96%B0%E7%94%BA" target="_blank" rel="noopener">Googleマップで経路を見る</a>
+</section>
+
+<footer>
+  <div class="foot-in">
+    <p class="fname">cafe NOC.（カフェ ノック）</p>
+    <p>〒550-0013 大阪府大阪市西区新町1-18-24 3F<br>
+    TEL <a href="tel:0665343701">06-6534-3701</a>／Instagram <a href="https://www.instagram.com/cafe_noc._/" target="_blank" rel="noopener">@cafe_noc._</a></p>
+    <p class="foot-note">※このページはサンプルです。無断使用は禁止しています。<br>
+    掲載情報は、お店の公式Instagram・Google等の公開情報をもとに作成しています。営業時間などの最新情報は、お店に直接ご確認ください。<br>
+    写真はすべてイメージです（実物写真ではありません）。</p>
+  </div>
+</footer>
+
+<nav class="action-bar">
+  <a class="main" href="tel:0665343701"><span class="ic">☎</span>電話する</a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=cafe+NOC.+%E5%A4%A7%E9%98%AA+%E6%96%B0%E7%94%BA" target="_blank" rel="noopener"><span class="ic">📍</span>経路案内</a>
+  <a href="https://www.instagram.com/cafe_noc._/" target="_blank" rel="noopener"><span class="ic">📷</span>Instagram</a>
+</nav>
+
+<script>
+(function(){
+  // 営業時間 19:00〜24:00、年中無休（年末年始除く）
+  var now = new Date();
+  var mins = now.getHours()*60 + now.getMinutes();
+  var el = document.getElementById('status');
+  var tx = document.getElementById('status-text');
+  var open=false, msg='';
+  if(mins>=1140){ open=true; msg='営業中です（〜24:00）'; }
+  else { msg='本日 19:00 から営業します'; }
+  tx.textContent = msg;
+  if(!open){ el.classList.add('closed'); }
+  // スクロールでふわっと表示
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } });
+  },{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(function(s){ io.observe(s); });
+})();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"cafe NOC.","servesCuisine":"カフェ","telephone":"06-6534-3701","priceRange":"¥1,000〜¥2,000","address":{"@type":"PostalAddress","postalCode":"550-0013","addressRegion":"大阪府","addressLocality":"大阪市西区","streetAddress":"新町1-18-24 3F"},"openingHours":["Mo-Su 19:00-24:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"169"}}
+</script>
+</body>
+</html>
